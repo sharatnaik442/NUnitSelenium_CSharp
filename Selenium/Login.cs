@@ -19,7 +19,7 @@ namespace NUnitSeleniumTraining.Selenium
             new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
             // initiialize web driver
             driver = new ChromeDriver();
-            //launch chrome browser
+            //launch chrome browsers
             driver.Navigate().GoToUrl("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
             driver.Manage().Window.Maximize();
         }
