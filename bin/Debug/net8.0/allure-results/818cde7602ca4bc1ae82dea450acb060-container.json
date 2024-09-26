@@ -1,0 +1,12 @@
+{
+  "uuid": "d42c5f20-b25f-4c66-be2a-fb51e6fe1cf8",
+  "name": "NUnitSeleniumTraining.NUNITTests.AllureReportGen.UserReg",
+  "children": [
+    "bada1cbb-6546-4c7c-adca-d43a22684ff8"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1726483508767,
+  "stop": 1726483508838
+}

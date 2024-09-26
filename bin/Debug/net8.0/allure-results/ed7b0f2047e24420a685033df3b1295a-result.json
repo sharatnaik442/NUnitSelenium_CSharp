@@ -1,0 +1,51 @@
+{
+  "uuid": "68ab21ea-1574-4768-8e78-71f2a150157b",
+  "historyId": "ce6c8500c77b4f86fca529a7243a93f6",
+  "testCaseId": "9066023b6aeaddb54bd41ef6afe28115",
+  "fullName": "NUnitSeleniumTraining:NUnitSeleniumTraining.NUNITTests.AllureReportGen.Login()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "AUTOG9ULHXM7D3C"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "NUnitSeleniumTraining.NUNITTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "Login"
+    },
+    {
+      "name": "testClass",
+      "value": "AllureReportGen"
+    }
+  ],
+  "links": [],
+  "name": "Login",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "567e1612-089b-4dcb-833b-25daeadb3c90-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726487930315,
+  "stop": 1726487930317
+}

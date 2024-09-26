@@ -1,0 +1,45 @@
+{
+  "uuid": "ac3235af-bd99-4d14-b21f-692c907cd600",
+  "historyId": "6ad6e665b530a46ad62e2a7a78274843",
+  "testCaseId": "84066a1ebc53cf8419e132b2d847cea1",
+  "fullName": "NUnitSeleniumTraining:NUnitSeleniumTraining.NUNITTests.PrimeUnitTesting.IsPrimeTest()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "AUTOG9ULHXM7D3C"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "NUnitSeleniumTraining.NUNITTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "IsPrimeTest"
+    },
+    {
+      "name": "testClass",
+      "value": "PrimeUnitTesting"
+    }
+  ],
+  "links": [],
+  "name": "IsPrimeTest",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1726485861443,
+  "stop": 1726485861447
+}

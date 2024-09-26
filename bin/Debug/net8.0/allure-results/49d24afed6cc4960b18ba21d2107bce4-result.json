@@ -1,0 +1,51 @@
+{
+  "uuid": "ee5a2315-743e-430b-8991-a381eb892905",
+  "historyId": "298322b617f0e63a8eb45f1f817bf68f",
+  "testCaseId": "bcbe9a38f41ba7253ea9a853ec7cfa1b",
+  "fullName": "NUnitSeleniumTraining:NUnitSeleniumTraining.NUNITTests.SetUpTearDown.login()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "AUTOG9ULHXM7D3C"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "NUnitSeleniumTraining.NUNITTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "login"
+    },
+    {
+      "name": "testClass",
+      "value": "SetUpTearDown"
+    }
+  ],
+  "links": [],
+  "name": "login",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "d8baedfe-8deb-4c06-bc12-1b7ecfed5ebd-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726486009827,
+  "stop": 1726486009830
+}

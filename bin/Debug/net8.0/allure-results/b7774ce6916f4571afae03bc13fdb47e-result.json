@@ -1,0 +1,51 @@
+{
+  "uuid": "0320613f-8491-4e30-8dc7-8e4fc5a3bb43",
+  "historyId": "1992cc9fe523bf01aa2239f0cf6a81c4",
+  "testCaseId": "4271f35b1735436cea7021d9a1fbb0e2",
+  "fullName": "NUnitSeleniumTraining:NUnitSeleniumTraining.NUNITTests.SetUpTearDown.addtocart()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "AUTOG9ULHXM7D3C"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "NUnitSeleniumTraining.NUNITTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "addtocart"
+    },
+    {
+      "name": "testClass",
+      "value": "SetUpTearDown"
+    }
+  ],
+  "links": [],
+  "name": "addtocart",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "319fe201-ed1e-456b-8258-84774d8b29aa-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726485861470,
+  "stop": 1726485861472
+}

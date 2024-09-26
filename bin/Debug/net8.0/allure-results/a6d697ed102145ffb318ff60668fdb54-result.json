@@ -1,0 +1,55 @@
+{
+  "uuid": "a3348215-ec9f-4660-a323-7cd593d582a3",
+  "historyId": "3945735ffebb8d56896d90e458b98014",
+  "testCaseId": "a1c208a8d6a85c1572ed50c475419b3b",
+  "fullName": "NUnitSeleniumTraining:NUnitSeleniumTraining.NUNITTests.CategoryTesting.addtocart()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "AUTOG9ULHXM7D3C"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "NUnitSeleniumTraining.NUNITTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "addtocart"
+    },
+    {
+      "name": "testClass",
+      "value": "CategoryTesting"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    }
+  ],
+  "links": [],
+  "name": "addtocart",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "b51f0a52-f6d4-4ff7-a09b-3283802d2512-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726486009758,
+  "stop": 1726486009760
+}

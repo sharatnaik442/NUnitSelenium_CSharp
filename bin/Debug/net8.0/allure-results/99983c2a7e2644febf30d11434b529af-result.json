@@ -1,0 +1,52 @@
+{
+  "uuid": "3dfc6d97-11d6-477a-89aa-7801cabf51e8",
+  "historyId": "3d5fe3a989d6c81d16247217715e2b81",
+  "testCaseId": "943db8edc2282c5ae71fa9f1a79ad949",
+  "fullName": "NUnitSeleniumTraining:NUnitSeleniumTraining.NUNITTests.Test1.testcase1()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "AUTOG9ULHXM7D3C"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "NUnitSeleniumTraining.NUNITTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "testcase1"
+    },
+    {
+      "name": "testClass",
+      "value": "Test1"
+    }
+  ],
+  "links": [],
+  "name": "testcase1",
+  "status": "passed",
+  "stage": "finished",
+  "description": "Testcase verifies the valid functionality with valid credentials\n",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "5b55f56b-d041-419a-85dd-404a39ec4e85-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1726487930516,
+  "stop": 1726487930518
+}
