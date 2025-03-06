@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using WebDriverManager.DriverConfigs.Impl;
 
 namespace NUnitSeleniumTraining.Selenium
-{
+{ 
     internal class Alerts
     {
         IWebDriver driver;

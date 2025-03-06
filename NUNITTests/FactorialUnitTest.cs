@@ -16,7 +16,7 @@ namespace NUnitSeleniumTraining.NUNITTests
         {
             int result = f.Fact(4);
 
-            Assert.AreEqual(24, result);
+            Assert.That(result, Is.EqualTo(24));
         }
     }
 }

@@ -24,9 +24,9 @@ namespace NUnitSeleniumTraining.NUNITTests
             int result1 = cl.Add(3, -4);
 
             //Assertion
-            Assert.AreEqual(5, result);
+            Assert.That(result, Is.EqualTo(5));
 
-            Assert.AreEqual(-1, result1);
+            Assert.That(result1, Is.EqualTo(-1));   
         }
 
         [Test]
@@ -37,7 +37,7 @@ namespace NUnitSeleniumTraining.NUNITTests
 
 
             //Assertion
-            Assert.AreEqual(1, result);
+            Assert.That(result, Is.EqualTo(1));
 
         }
         [TearDown]

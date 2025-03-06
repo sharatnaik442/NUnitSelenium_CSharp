@@ -17,8 +17,8 @@ namespace NUnitSeleniumTraining.NUNITTests
             bool result = prime.IsPrime(3);
             bool result1= prime.IsPrime(4);
 
-            Assert.AreEqual(true,result);
-            Assert.AreEqual(false,result1);
+            Assert.That(result, Is.EqualTo(true));
+            Assert.That(result1, Is.EqualTo(false));
         }
     }
 }

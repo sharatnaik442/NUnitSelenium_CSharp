@@ -30,7 +30,7 @@ namespace NUnitSeleniumTraining.Selenium
             
             //fetch the handle of current page
             string curHandle=driver.CurrentWindowHandle;
-            Assert.IsNotNull(curHandle);
+            Assert.That(curHandle, Is.Not.Null);
 
             //click on the link tp open new window
             IWebElement open = driver.FindElement(By.XPath("//a[@id='a-link-that-opens-a-new-window']"));
@@ -46,7 +46,7 @@ namespace NUnitSeleniumTraining.Selenium
             string title = driver.Title;
             Console.WriteLine(title);
 
-            Assert.AreEqual("Simple Page", title);
+            Assert.That(title, Is.EqualTo("Sample Page"));
 
             //closing child window
             driver.Close();
@@ -56,7 +56,7 @@ namespace NUnitSeleniumTraining.Selenium
             string title1 = driver.Title;
             Console.WriteLine(title1);
             Thread.Sleep(1000);
-            Assert.AreEqual("Test page for WindowSwitchingTest.testShouldFocusOnTheTopMostFrameAfterSwitchingToAWindow", title1);
+            Assert.That(title1, Is.EqualTo("Test page for WindowSwitchingTest.testShouldFocusOnTheTopMostFrameAfterSwitchingToAWindow"));
 
         }
 

@@ -31,7 +31,7 @@ namespace NUnitSeleniumTraining.DataDrivenTesting
 
             string txt = Msg.Text;
 
-            Assert.AreEqual("Dashboard", txt);
+            Assert.That(txt, Is.EqualTo("Dashboard"));
 
 
         }

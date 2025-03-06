@@ -30,7 +30,7 @@ namespace NUnitSeleniumTraining.Selenium
             Thread.Sleep(3000);
 
             IWebElement Dropdown= driver.FindElement(By.Id("dropdown-class-example"));
-            Assert.IsNotNull(Dropdown);
+            Assert.That(Dropdown.Displayed, Is.True);
 
             var select = new SelectElement(Dropdown);
 

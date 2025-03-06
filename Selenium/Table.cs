@@ -45,7 +45,7 @@ namespace NUnitSeleniumTraining.Selenium
             String text = celldata.Text;
             Console.WriteLine(text);
 
-            Assert.AreEqual("Frank", text);
+            Assert.That(text, Is.EqualTo("Frank"));
 
 
         }

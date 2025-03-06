@@ -43,7 +43,7 @@ namespace NUnitSeleniumTraining.Selenium
                 
 
             new Actions(driver)
-                .KeyUp(Keys.Shift)
+                //.KeyUp(Keys.Shift)
                 .SendKeys("a")
                 .Perform();
 

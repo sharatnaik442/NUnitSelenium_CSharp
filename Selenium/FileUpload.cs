@@ -45,7 +45,7 @@ namespace NUnitSeleniumTraining.Selenium
 
             Console.WriteLine(textmsg);
 
-            Assert.AreEqual(textmsg, expectedtext);
+            Assert.That(textmsg, Is.EqualTo(expectedtext));
         }
 
         [TearDown]

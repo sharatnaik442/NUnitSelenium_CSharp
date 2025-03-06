@@ -45,7 +45,7 @@ namespace NUnitSeleniumTraining.Selenium
             IWebElement guest = driver.FindElement(By.XPath("(//span[@class='a8887b152e c7ce171153'])[1]"));
             guest.Click();
             IWebElement Dropdown = driver.FindElement(By.XPath("(//select[@id=':r4l:'])[1]"));
-            Assert.IsNotNull(Dropdown);
+            Assert.That(Dropdown.Displayed, Is.True);
 
             var select = new SelectElement(Dropdown);
 

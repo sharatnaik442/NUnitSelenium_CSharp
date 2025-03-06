@@ -27,12 +27,12 @@ namespace NUnitSeleniumTraining.DataDrivenTesting
             LoginButton.Click();
             Thread.Sleep(1000);
 
-            IWebElement ErrMsg = driver.FindElement(By.XPath("//div[@class='oxd-alert-content oxd-alert-content--error']"));
+            IWebElement ErrMsg = driver.FindElement(By.XPath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']"));
             
             string txt= ErrMsg.Text;
 
-            Assert.AreEqual("Invalid credentials", txt);
-            
+            Assert.That(txt, Is.EqualTo("Invalid credentials"));
+
 
         }
     }

@@ -7,10 +7,10 @@ using System.Threading;
 
 namespace NUnitSeleniumTraining.Parallel
 {
-    [Parallelizable]
+    
+    [Parallelizable(ParallelScope.Children)]
     internal class ParallelExUsingTestParam : Base
     {
-        [Parallelizable(ParallelScope.Children)]
         [Test, TestCaseSource(nameof(GetTestData))]
         public void LoginTest(string username, string password)
         {
@@ -30,17 +30,17 @@ namespace NUnitSeleniumTraining.Parallel
             // Inputting text using send keys 
             Password.SendKeys(password);
 
-            IWebElement LoginButton = driver.FindElement(By.XPath("//button[@type='submit']"));
+            IWebElement LoginButton = driver.FindElement(By.XPath("//button[normalize-space()='Login']"));
             LoginButton.Click();
 
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
 
-            IWebElement Errmsg = driver.FindElement(By.XPath("//div[@class='oxd-alert-content oxd-alert-content--error']"));
+            IWebElement Errmsg = driver.FindElement(By.XPath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']"));
             string errmsg = Errmsg.Text;
 
             Console.WriteLine(errmsg);
 
-            Assert.AreEqual("Invalid credentials", errmsg);
+            Assert.That(errmsg, Is.EqualTo("Invalid credentials"));
         }
 
         public static IEnumerable<TestCaseData> GetTestData()

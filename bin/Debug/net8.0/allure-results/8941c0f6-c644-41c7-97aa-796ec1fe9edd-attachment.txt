@@ -1,3 +1,0 @@
-Launching browser
-logging into applicaton
-Closing browser

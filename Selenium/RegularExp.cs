@@ -29,10 +29,10 @@ namespace NUnitSeleniumTraining.Selenium
             Thread.Sleep(2000);
 
             IWebElement starts = driver.FindElement(By.XPath("//footer[starts-with(@class,'Footer')]"));
-            Assert.IsNotNull(starts);
+            Assert.That(starts, Is.Not.Null);
 
             IWebElement contains = driver.FindElement(By.XPath("//footer[contains(@class,'Footer')]"));
-            Assert.IsNotNull(contains);
+            Assert.That(contains, Is.Not.Null);
 
         }
 

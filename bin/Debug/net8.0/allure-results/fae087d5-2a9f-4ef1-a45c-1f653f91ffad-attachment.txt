@@ -1,2 +1,0 @@
-Executing the setup
-All units of calculator functionality are executed

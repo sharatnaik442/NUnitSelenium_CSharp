@@ -16,45 +16,40 @@ namespace NUnitSelenium.Utilities
 {
     public class Base
     {
-        public IWebDriver driver;
+        protected IWebDriver driver;
 
         [SetUp]
         public void startBrowser()
         {
-
             string browserName = ConfigurationManager.AppSettings["browser"];
-            InitBrowser(browserName);
+            driver = InitBrowser(browserName); // Change this to return the driver
             driver.Navigate().GoToUrl("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
             driver.Manage().Window.Maximize();
             Thread.Sleep(2000);
-
         }
 
-        public void InitBrowser(string browserName)
+        public IWebDriver InitBrowser(string browserName) // Change return type to IWebDriver
         {
             switch (browserName)
             {
                 case "Firefox":
                     new WebDriverManager.DriverManager().SetUpDriver(new FirefoxConfig());
-                    driver = new FirefoxDriver();
-                    break;
+                    return new FirefoxDriver();
                 case "Edge":
                     new WebDriverManager.DriverManager().SetUpDriver(new EdgeConfig());
-                    driver = new EdgeDriver();
-                    break;
+                    return new EdgeDriver();
                 case "Chrome":
                     new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
-                    driver = new ChromeDriver();
-                    break;
+                    return new ChromeDriver();
+                default:
+                    throw new ArgumentException("Browser not supported");
             }
-
         }
-
 
         [TearDown]
         public void tearDownBrowser()
         {
-            driver.Quit();
+            driver?.Close(); // Ensure driver is not null before closing
         }
     }
 }
