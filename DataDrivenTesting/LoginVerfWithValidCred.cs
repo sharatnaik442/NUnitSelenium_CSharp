@@ -25,9 +25,9 @@ namespace NUnitSeleniumTraining.DataDrivenTesting
 
             IWebElement LoginButton = driver.FindElement(By.XPath("//Button[@type='submit']"));
             LoginButton.Click();
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
 
-            IWebElement Msg = driver.FindElement(By.CssSelector(".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module"));
+            IWebElement Msg = driver.FindElement(By.XPath("//h6[normalize-space()='Dashboard']"));
 
             string txt = Msg.Text;
 

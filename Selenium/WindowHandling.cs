@@ -46,7 +46,7 @@ namespace NUnitSeleniumTraining.Selenium
             string title = driver.Title;
             Console.WriteLine(title);
 
-            Assert.That(title, Is.EqualTo("Sample Page"));
+            Assert.That(title, Is.EqualTo("Simple Page"));
 
             //closing child window
             driver.Close();

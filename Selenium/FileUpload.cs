@@ -29,7 +29,7 @@ namespace NUnitSeleniumTraining.Selenium
             Thread.Sleep(3000);
 
             IWebElement ChooseFile = driver.FindElement(By.XPath("//input[@id='file-upload']"));
-            ChooseFile.SendKeys("C:\\Users\\shana\\Downloads\\shana_Sharat_Naik.jpeg");
+            ChooseFile.SendKeys("C:\\Users\\shana\\Downloads\\shana_Sharat_Naik.jpeg");//give the path of the file here
 
 
             IWebElement Upload = driver.FindElement(By.XPath("//input[@id='file-submit']"));

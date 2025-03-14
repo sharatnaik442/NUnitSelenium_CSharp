@@ -47,6 +47,13 @@ namespace NUnitSeleniumTraining.Selenium
             IWebElement SubmitButton = driver.FindElement(By.Name("submit"));
             SubmitButton.Click();
 
+            // switch the control to alert or the pop up
+            IAlert alt = driver.SwitchTo().Alert();
+
+            // click on OK button
+
+            alt.Accept();
+
         }
 
         [TearDown]

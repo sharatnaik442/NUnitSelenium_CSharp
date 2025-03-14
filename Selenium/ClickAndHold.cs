@@ -1,18 +1,13 @@
-﻿using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WebDriverManager.DriverConfigs.Impl;
 
 namespace NUnitSeleniumTraining.Selenium
 {
     internal class ClickAndHold
     {
-        WebDriver driver;
+        IWebDriver driver;
         [SetUp]
         public void StartBrowser()
         {
@@ -20,9 +15,9 @@ namespace NUnitSeleniumTraining.Selenium
             new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
             // initiialize web driver
             driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
             //launch chrome browser
             driver.Navigate().GoToUrl("https://www.amazon.in/");
-            driver.Manage().Window.Maximize();
         }
         [Test]
         public void Run()
@@ -31,15 +26,17 @@ namespace NUnitSeleniumTraining.Selenium
 
             IWebElement prime = driver.FindElement(By.XPath("//span[normalize-space()='Prime']"));
 
-            IWebElement LatestMovies = driver.FindElement(By.XPath("//img[@id='multiasins-img-link']"));
-
-            new Actions(driver)
-                .ClickAndHold(prime)
-                .MoveToElement(LatestMovies)
-                .Perform();
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(prime)  // Move the cursor to the 'prime' element
+                   .Perform();  // Execute the action
             Thread.Sleep(2000);
 
-           // Assert.AreEqual("Prime", driver.FindElement(By.XPath("//span[normalize-space()='Prime']")).Text);
+            IWebElement LatestMovies = driver.FindElement(By.XPath("//img[@id='multiasins-img-link']"));
+            new Actions(driver)
+                .MoveToElement(LatestMovies)
+                .Perform();
+
+            // Assert.AreEqual("Prime", driver.FindElement(By.XPath("//span[normalize-space()='Prime']")).Text);
 
         }
 

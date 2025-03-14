@@ -21,8 +21,8 @@ namespace NUnitSeleniumTraining.Selenium
             // initiialize web driver
             driver = new ChromeDriver();
             //launch chrome browser
-            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/javascript_alerts");
             driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/javascript_alerts");
         }
         [Test]
         public void Run()

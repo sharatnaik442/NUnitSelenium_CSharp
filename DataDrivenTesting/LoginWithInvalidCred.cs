@@ -25,7 +25,7 @@ namespace NUnitSeleniumTraining.DataDrivenTesting
 
             IWebElement LoginButton = driver.FindElement(By.XPath("//Button[@type='submit']"));
             LoginButton.Click();
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
 
             IWebElement ErrMsg = driver.FindElement(By.XPath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']"));
             

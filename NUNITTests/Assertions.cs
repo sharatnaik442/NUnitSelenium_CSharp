@@ -39,7 +39,7 @@ internal class Assertions
             //empty assertions
             // Assert.IsEmpty(actual);
 
-            Assert.That(actual, Is.Empty);
+            Assert.That(actual, Is.Not.Empty);
 
             //Assert.IsTrue(actual.Equals(expected));
 

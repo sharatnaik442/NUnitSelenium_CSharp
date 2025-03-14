@@ -28,7 +28,7 @@ namespace NUnitSeleniumTraining.Selenium
         {
             Thread.Sleep(3000);
 
-            IWebElement Download = driver.FindElement(By.XPath("//a[normalize-space()='HR1.png']"));
+            IWebElement Download = driver.FindElement(By.LinkText("Screenshot2.png"));
             Download.Click();
 
             Thread.Sleep(3000);
